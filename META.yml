@@ -1,0 +1,17 @@
+
+abstract: Math::Symbolic LaTeX output
+author: Please send feedback, bug reports, and support requests to the Math::Symbolic
+build_requires: 
+  Test::More: 0.47
+distribution_type: module
+generated_by: Module::Install version 0.56
+license: unknown
+name: Math-Symbolic-Custom-LaTeXDumper
+no_index: 
+  directory: 
+    - inc
+    - t
+requires: 
+  Math::Symbolic: 0.201
+  perl: 5.6.0
+version: 0.201
