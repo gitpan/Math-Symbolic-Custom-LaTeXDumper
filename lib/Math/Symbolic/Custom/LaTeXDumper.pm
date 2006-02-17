@@ -37,7 +37,7 @@ use strict;
 use warnings;
 no warnings 'recursion';
 
-our $VERSION = '0.201';
+our $VERSION = '0.202';
 
 use Math::Symbolic::Custom::Base;
 BEGIN { *import = \&Math::Symbolic::Custom::Base::aggregate_import }
@@ -135,6 +135,12 @@ Defaults to C<true>. Set to a false value to turn this off. This is automaticall
 turned off for variables that are mapped to custom LaTeX by the C<variable_mappings>
 parameter.
 
+=item no_sqrt
+
+By default, the dumper tries to convert exponents of 1/2 (or 0.5) or anything
+numeric that ends up being 1/2 to a square root. If this gives inconvenient results,
+set this option to a true value to turn the heuristics off.
+
 =back
 
 =cut
@@ -147,6 +153,7 @@ sub to_latex {
     $config{no_fractions}      = 0 unless defined $config{no_fractions};
 	$config{max_fractions}     = 2 if not exists $config{max_fractions};
     $config{exclude_signature} = 0 unless defined $config{exclude_signature};
+    $config{no_sqrt} = 0 unless defined $config{no_sqrt};
     $config{replace_default_greek} = 0
       unless defined $config{replace_default_greek};
 
@@ -241,7 +248,12 @@ sub to_latex {
         sub { "\\frac{d $_[0]}{d $_[1]}" },
 
         # B_EXP
-        sub { "$_[0]^{$_[1]}" },
+        sub {
+			if (!$config{no_sqrt} and length($_[1]) > 2 and $_[1] !~ /\{|\}|\^|_|\-|\\|[A-DF-Za-df-z]/ and $_[1] - 0.5 < 1e-28) {
+				return "\\sqrt{$_[0]}";
+			}
+			length($_[1]) == 1 ? "$_[0]^$_[1]" : "$_[0]^{$_[1]}"
+		},
 
         # B_LOG
         sub { "\\log_{$_[0]}$_[1]" },
