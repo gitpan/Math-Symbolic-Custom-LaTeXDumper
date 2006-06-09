@@ -7,4 +7,4 @@ requires       'Math::Symbolic' => '0.201';
 build_requires 'Test::More'              => '0.47';
 
 auto_install;
-WriteAll;
+WriteAll(sign => 1);

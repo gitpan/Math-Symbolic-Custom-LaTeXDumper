@@ -14,30 +14,30 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 b8010e97fd9b33adc9270c914029ca9ec1b589cb Changes
+SHA1 1fa619ad51852b02f244bbdc0a819b318d0917ab Changes
 SHA1 35b26394d32beff9b6a2333f0e1912d4e4b12a35 MANIFEST
-SHA1 4ba5b322ff7f98a5e4ddec64fce37d377e9f4294 META.yml
-SHA1 57554c9aaca54b563201a5b114dabd1ea3a4af58 Makefile.PL
-SHA1 443dab175963c1c7de212a55e8ea04a528eb4b5d README
-SHA1 7c4c900481d5d3d8c979999d11be84f8ade56cdb inc/Module/AutoInstall.pm
-SHA1 0df5f0b5152f6b61a646d35f83827184a8314ad9 inc/Module/Install.pm
-SHA1 b43b16d0562926a60ebe71e72d6d23da94c1d011 inc/Module/Install/AutoInstall.pm
-SHA1 08705de1d92096e40b815fbe103f5ef820d98202 inc/Module/Install/Base.pm
-SHA1 852bba01c964cf2501d15577ffc0678501d10760 inc/Module/Install/Can.pm
-SHA1 57d3ef2e95eb21b4426e54fcefd6ea3d34d16b35 inc/Module/Install/Fetch.pm
-SHA1 144e5bfc69327edd6a3cdddd12ea9baf8258c9ca inc/Module/Install/Include.pm
-SHA1 31707ee5cb077d316361604e30d4eeb527a49e26 inc/Module/Install/Makefile.pm
-SHA1 9baeb2f4f4c92f67f1e0d7be4e370af5019d9bb5 inc/Module/Install/Metadata.pm
-SHA1 07940a52a61b1456023751be6bffa012fe1186ab inc/Module/Install/Win32.pm
-SHA1 9aeb39d66698a45e1f997e1536bda96183a4ba3d inc/Module/Install/WriteAll.pm
-SHA1 d91b66073ad0b2d1b83a3949b0e09c58a3c42a4b lib/Math/Symbolic/Custom/LaTeXDumper.pm
+SHA1 8b4d02a602dc302a808adeea7b72d2a00ca273c8 META.yml
+SHA1 9814a88b7b2ee4fe0f5b30b1174d0dd3aa979839 Makefile.PL
+SHA1 6c2045fc87fa217a080267d524ddf5ef15a98968 README
+SHA1 e974f78178f53c88fb7e3f8d20f7df184d13e1d0 inc/Module/AutoInstall.pm
+SHA1 017bedfcba1e0c72b36301e6ef21b8712b84d175 inc/Module/Install.pm
+SHA1 bcfb15c6a158831c45b5100a7aa94e0f88fced9f inc/Module/Install/AutoInstall.pm
+SHA1 b1a70869c098ba602151631386fc510b5bfd3511 inc/Module/Install/Base.pm
+SHA1 dd7313db23119d49ae78593bfa576554fb5b0fd8 inc/Module/Install/Can.pm
+SHA1 7c3a5153a5574556d895f23e121a41e680da11c1 inc/Module/Install/Fetch.pm
+SHA1 2e9c012e58c778a4a83c5eaea20c3aed306ad0c5 inc/Module/Install/Include.pm
+SHA1 176d68fe7c07b6ab7cfe09093078b8127bbde786 inc/Module/Install/Makefile.pm
+SHA1 8b37b38215d14f922b3d5132ce33d11d21d531ba inc/Module/Install/Metadata.pm
+SHA1 7eb44b00058c44795038d7fa4c0c77470f20a7f8 inc/Module/Install/Win32.pm
+SHA1 6d05967a5e1680b5f118315aaa6b8a1e143d79d8 inc/Module/Install/WriteAll.pm
+SHA1 c63a32f6183c58e3c400838389c085244c4dc065 lib/Math/Symbolic/Custom/LaTeXDumper.pm
 SHA1 bb0da54f2b3f2d7955baa41ee458cb3d1887f475 t/00pod.t
 SHA1 2db32c1aac44c2e41530ea63431166d91bd458bf t/00podcover.t
 SHA1 261cbf4645b0f3d500ad56920b5d0f036786a8fa t/01compile.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.0 (GNU/Linux)
 
-iD8DBQFD9cLvZCuimE51gxcRAlccAJ9Ghc82nRb2XX7qWUmvthRwUjwlkQCguieM
-/KrN4mnbwI0fBE23qZQ9mKM=
-=1s98
+iD8DBQFEibkdZCuimE51gxcRAufvAJwKiT8qPNXf7M3Nti/dHOXt1tw50ACZAUl/
+5OqAPKVrg9bQ2G18tq6GDXo=
+=f1vA
 -----END PGP SIGNATURE-----
