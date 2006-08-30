@@ -3,7 +3,7 @@ author: Please send feedback, bug reports, and support requests to the Math::Sym
 build_requires: 
   Test::More: 0.47
 distribution_type: module
-generated_by: Module::Install version 0.63
+generated_by: Module::Install version 0.64
 license: unknown
 name: Math-Symbolic-Custom-LaTeXDumper
 no_index: 
@@ -13,4 +13,4 @@ no_index:
 requires: 
   Math::Symbolic: 0.201
   perl: 5.6.0
-version: 0.203
+version: 0.204
