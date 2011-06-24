@@ -14,3 +14,4 @@ README
 t/00pod.t
 t/00podcover.t
 t/01compile.t
+t/02bugs.t
